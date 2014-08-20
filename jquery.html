@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Learning Javascript</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter your name here" id="name"/>
+        <div class="button">Submit</div>
+        <div id="my-element"></div>
+        <script type="text/javascript">
+            $('.button').on('click', function() {
+                // Get the name and set the greeting
+                var name     = $('#name').val(),
+                    greeting = 'Hello ' + name + '!';
+                // Display the greeting in the element you want
+                $('#my-element').text(greeting);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Learning Javascript</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <input type="text" placeholder="Enter your name here" id="name"/>
+        <div id="submit-button" class="button" onClick="greeting()">Submit</div>
+        <div id="clear-button" class="button clear">Clear</div>
+        <div id="my-element"></div>
+        <script type="text/javascript">
+            function greeting() {
+                // Get the input value
+                var name = document.getElementById('name').value;
+                // Set the greeting with the name you just
+                // got from the input box and some other text
+                var greeting = 'Hello ' + name + '!';
+                // Get the element you wish to display the message with
+                var myElement = document.getElementById('my-element');
+                // Set the text of the element
+                myElement.innerHTML = greeting;
+            }
+        </script>
+    </body>
+</html>
